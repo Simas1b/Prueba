@@ -2,10 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+    <link href="dist/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title>Mi primer App</title>
   </head>
   <body>
-    <h1>Título principal de la practica HTML</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg" class="img-fluid" alt="HTML5" width="10%" height="10%">
+          <figcaption class="figure-caption">Figura 1.1</figcaption>
+        </div>
+      </div>
+    </div>  
+     <h1>Título principal de la practica HTML</h1>
     <p>
       Estamos aprendiendo HTML y necesitamos practicar para que se nos fije el
       conocimiento, en poco tiempo voy a poder maquetar un sitio web completo.
@@ -91,56 +101,106 @@
 <li> Elemento 3</li> 
 <li> Elemento 4</li> 
 </ol>
+
 <h4>La lista debe ir desde la laetra z hasta la w (descendente)</h4>
+
 <ol type="a" start="26" reversed>
 <li> Elemento 1</li>
 <li> Elemento 2</li>   
 <li> Elemento 3</li> 
 <li> Elemento 4</li>
 </ol>
+
 <h4>La lista debe ir desde 1 hasta 4</h4>
+
 <ol>
 <li> Elemento 1</li>
 <li> Elemento 2</li>   
 <li> Elemento 3</li> 
 <li> Elemento 4</li>  
 </ol>  
+
 <h4>La lista debe ir desde 33 hasta 36 </h4>
+
 <ol start="33">
    <li> Elemento 1</li>
    <li> Elemento 2</li>   
    <li> Elemento 3</li> 
    <li> Elemento 4</li> 
 </ol>  
+
 <h4>La lista debe ir desde 100 hasta 97 (descendente) </h4>
+
 <ol start="100" reversed>
 <li> Elemento 1</li>
 <li> Elemento 2</li>   
 <li> Elemento 3</li> 
 <li> Elemento 4</li>  
 </ol>  
+
    <h2>Listas Desordenadas</h2>
 
    <h4>La lista debe ser de tipo disco </h4>
+
  <ul type="disc">
          <li> Elemento 1</li>  		
          <li> Elemento 2</li>  
          <li> Elemento 3</li>  
          <li> Elemento 4</li>  
  </ul>
+
    <h4>La lista debe ser de tipo circulo</h4>
+
 <ul type="circle">
    <li> Elemento 1</li>  		
    <li> Elemento 2</li>  
    <li> Elemento 3</li>  
    <li> Elemento 4</li>  
 </ul>
+
    <h4>La lista debe ser de tipo cuadrado</h4>
+
 <ul type="square">
    <li> Elemento 1</li>  		
    <li> Elemento 2</li>  
    <li> Elemento 3</li>  
    <li> Elemento 4</li>  
 </ul>
+   <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<h1>Prueba de Formulario </h1>
+<h2>Los Username y Password son parte de los Formularios</h2>
+<form>
+
+  <div class="mb-3">
+
+    <label for="idE" class="form-label">Correo</label>
+
+    <input type="email" class="form-control" id="idE" aria-describedby ="idEH">
+
+    <div id="idEH" class="form-text">Debe ser un correo válido.</div>
+
+  </div>
+
+  <div class="mb-3">
+
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+
+    <input type="password" class="form-control" id="exampleInputPassword1">
+
+  </div>
+
+  <div class="mb-3 form-check">
+
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Enviar</button>
+
+</form>
+
   </body>
 </html>
